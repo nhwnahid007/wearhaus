@@ -36,7 +36,7 @@ const Header = async () => {
                   0
                 </span>
               </Link>
-              <UserButton/>
+              <UserButton />
             </SignedIn>
             {!user && (
               <SignInButton mode="modal">
