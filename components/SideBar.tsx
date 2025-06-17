@@ -6,6 +6,7 @@ import { headerData } from '../constants';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import SocialMedia from './SocialMedia';
+import { useOutsideClick } from '../hooks/useOutsideClick';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -14,6 +15,7 @@ interface SidebarProps {
 
 const SideBar: FC<SidebarProps> = ({ isOpen, onClose }) => {
   const pathName = usePathname();
+  const SideBarRef= useOutsideClick<HTMLDivElement>(onClose)
   return (
     <div
       className={`fixed inset-y-0 left-0 z-50 bg-darkColor/50 shadow-xl hoverEffect ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
@@ -22,6 +24,7 @@ const SideBar: FC<SidebarProps> = ({ isOpen, onClose }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.4, delay: 0.3 }}
+        ref={SideBarRef}
         className="min-w-72 max-w-96 bg-darkColor text-white/70 h-full border-r border-r-white flex flex-col gap-6 p-10 "
       >
         <div className="flex items-center justify-between">
