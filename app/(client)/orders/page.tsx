@@ -1,5 +1,5 @@
 import React from 'react';
-import { requiredUser } from '../../hooks/requiredUser';
+import { requiredUser } from '../../../hooks/requiredUser';
 
 const OrdersPage = async () => {
   await requiredUser();
