@@ -49,7 +49,7 @@ export const productType = defineType({
     }),
     defineField({
       name: 'discount',
-      title: 'Discount Price',
+      title: 'Discount',
       type: 'number',
       validation: (Rule) => Rule.required(),
     }),
@@ -61,7 +61,7 @@ export const productType = defineType({
     }),
     defineField({
       name: 'stock',
-      title: 'Stock Price',
+      title: 'Stock',
       type: 'number',
       validation: (Rule) => Rule.min(0),
     }),
@@ -102,11 +102,11 @@ export const productType = defineType({
     prepare(selection) {
       const { title, subtitle, media } = selection;
       const image = media && media[0];
-      return{
+      return {
         title: title,
         subtitle: `$${subtitle}`,
-        media: image
-      }
+        media: image,
+      };
     },
   },
 });
