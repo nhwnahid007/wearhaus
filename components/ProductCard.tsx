@@ -17,7 +17,7 @@ const ProductCard = ({ product }: Props) => {
     <div className="group text-sm rounded-lg overflow-hidden">
       <div className="relative bg-gradient-to-r from-zinc-200 via-zinc-300 to-zinc-200 overflow-hidden">
         {product.images && (
-          <Link href={'product'}>
+          <Link href={`/product/${product.slug?.current}`}>
             <Image
               src={urlFor(product.images[0]).url()}
               alt="productImage"
