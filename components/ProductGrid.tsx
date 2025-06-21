@@ -50,11 +50,12 @@ const ProductGrid = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10 w-full ">
               {products?.map((product: Product) => (
                 <AnimatePresence key={product._id}>
-                  <motion.div layout
-                  initial={{opacity:0.2}}
-                  animate={{opacity:1}}
-                  exit={{opacity:0}}
-                   >
+                  <motion.div
+                    layout
+                    initial={{ opacity: 0.2 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
                     <ProductCard product={product} />
                   </motion.div>
                 </AnimatePresence>

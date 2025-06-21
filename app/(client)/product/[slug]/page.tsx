@@ -1,5 +1,5 @@
-import React from 'react'
-import Container from '../../../../components/Container'
+import React from 'react';
+import Container from '../../../../components/Container';
 
 interface Props {
   params: {
@@ -7,15 +7,15 @@ interface Props {
   };
 }
 
-const SingleProductPage = ({params}:Props) => {
-    console.log(params);
+const SingleProductPage = ({ params }: Props) => {
+  console.log(params);
   return (
     <div>
-        <Container>
-    <p>Single product:  </p>
-        </Container>
+      <Container>
+        <p>Single product: </p>
+      </Container>
     </div>
-  )
-}
+  );
+};
 
-export default SingleProductPage
+export default SingleProductPage;

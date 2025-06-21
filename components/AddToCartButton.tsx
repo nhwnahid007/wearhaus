@@ -17,12 +17,14 @@ const AddToCartButton = ({ product, className }: Props) => {
       {itemCount ? (
         <div className="w-full text-sm">
           <div className="flex items-center justify-between">
-            <span className='text-xs text-muted-foreground'>Quantity</span>
+            <span className="text-xs text-muted-foreground">Quantity</span>
             <QuantityButtons product={product} />
           </div>
           <div className="flex items-center justify-between border-t pt-1 ">
-            <span className='text-xs text-muted-foreground'>Sub total</span>
-            <PriceFormatter amount={product.price? product.price*itemCount : 0}/>
+            <span className="text-xs text-muted-foreground">Sub total</span>
+            <PriceFormatter
+              amount={product.price ? product.price * itemCount : 0}
+            />
           </div>
         </div>
       ) : (
