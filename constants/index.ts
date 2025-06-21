@@ -36,38 +36,38 @@ export const categoriesData = [
 
 export const faqsData = [
   {
-    question: "What is WearHaus?",
+    question: 'What is WearHaus?',
     answer:
-      "WearHaus is your online destination for thoughtfully curated fashion that blends modern style with ultimate comfort. We offer a distinctive collection of clothing and accessories for a refined everyday look.",
+      'WearHaus is your online destination for thoughtfully curated fashion that blends modern style with ultimate comfort. We offer a distinctive collection of clothing and accessories for a refined everyday look.',
   },
   {
-    question: "How do I place an order?",
+    question: 'How do I place an order?',
     answer:
-      "Simply browse our collections, select your desired items, choose your size and quantity, and add them to your cart. Proceed to checkout to complete your purchase by providing shipping and payment details.",
+      'Simply browse our collections, select your desired items, choose your size and quantity, and add them to your cart. Proceed to checkout to complete your purchase by providing shipping and payment details.',
   },
   {
-    question: "What payment methods do you accept?",
+    question: 'What payment methods do you accept?',
     answer:
-      "We accept major credit cards (Visa, MasterCard, Amex), PayPal, and other secure payment options. All transactions are processed securely.",
+      'We accept major credit cards (Visa, MasterCard, Amex), PayPal, and other secure payment options. All transactions are processed securely.',
   },
   {
-    question: "What is your shipping policy?",
+    question: 'What is your shipping policy?',
     answer:
-      "We offer various shipping options. Standard shipping usually takes 5-7 business days, while expedited options are available for faster delivery. You can find detailed information on our Shipping & Returns page.",
+      'We offer various shipping options. Standard shipping usually takes 5-7 business days, while expedited options are available for faster delivery. You can find detailed information on our Shipping & Returns page.',
   },
   {
-    question: "Can I return or exchange an item?",
+    question: 'Can I return or exchange an item?',
     answer:
-      "Yes, we offer hassle-free returns and exchanges within 30 days of purchase, provided the item is unworn, unwashed, and has all original tags attached. Please visit our Returns & Exchanges page for full details and instructions.",
+      'Yes, we offer hassle-free returns and exchanges within 30 days of purchase, provided the item is unworn, unwashed, and has all original tags attached. Please visit our Returns & Exchanges page for full details and instructions.',
   },
   {
-    question: "How do I find the right size?",
+    question: 'How do I find the right size?',
     answer:
-      "Each product page features a detailed size chart to help you find your perfect fit. We recommend comparing your measurements to the chart for the best results.",
+      'Each product page features a detailed size chart to help you find your perfect fit. We recommend comparing your measurements to the chart for the best results.',
   },
   {
-    question: "Do you offer international shipping?",
+    question: 'Do you offer international shipping?',
     answer:
-      "Yes, WearHaus ships internationally to most countries. Shipping costs and delivery times may vary based on your location. Please check our Shipping & Returns page for more information.",
+      'Yes, WearHaus ships internationally to most countries. Shipping costs and delivery times may vary based on your location. Please check our Shipping & Returns page for more information.',
   },
 ];

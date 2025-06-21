@@ -47,9 +47,7 @@ const ContactPage = () => {
               </svg>
               <div>
                 <p className="font-semibold text-gray-900">Our Location</p>
-                <p className="text-gray-700">
-                  New Orlean, USA
-                </p>
+                <p className="text-gray-700">New Orlean, USA</p>
               </div>
             </div>
             <div className="flex items-center space-x-3">
