@@ -31,7 +31,7 @@ const data: Props[] = [
   },
   {
     title: 'Email Us',
-    subtitle: 'wearhaus@gmail.com',
+    subtitle: 'support@wearhaus.com',
     icon: (
       <Mail className="h-6 w-6 text-gray-600 group-hover:text-darkColor transition-colors" />
     ),
