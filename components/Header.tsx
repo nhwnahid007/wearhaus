@@ -14,7 +14,7 @@ const Header = async () => {
   const user = await currentUser();
 
   return (
-    <header className="bg-white border-b py-5">
+    <header className="bg-white border-b py-5 border-b-gray-400 sticky z-50">
       {/* left bar */}
 
       <Container className="flex items-center justify-between gap-7 text-lightColor">

@@ -16,6 +16,8 @@ export const metadata: Metadata = {
 };
 
 import { ClerkProvider } from '@clerk/nextjs';
+import { Toaster } from 'react-hot-toast';
+
 
 export default function RootLayout({
   children,
@@ -29,6 +31,15 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <Toaster
+        position="bottom-right"
+        toastOptions={{
+          style: {
+            background: "#000000",
+            color: "#fff",
+          },
+        }}
+      />
         </body>
       </ClerkProvider>
     </html>

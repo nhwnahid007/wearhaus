@@ -1,6 +1,6 @@
-import { Product } from "./sanity.types";
-import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
+import { Product } from './sanity.types';
 
 export interface CartItem {
   product: Product;
@@ -26,14 +26,14 @@ const useCartStore = create<CartState>()(
       addItem: (product) =>
         set((state) => {
           const existingItem = state.items.find(
-            (item) => item.product._id === product._id
+            (item) => item.product._id === product._id,
           );
           if (existingItem) {
             return {
               items: state.items.map((item) =>
                 item.product._id === product._id
                   ? { ...item, quantity: item.quantity + 1 }
-                  : item
+                  : item,
               ),
             };
           } else {
@@ -56,14 +56,14 @@ const useCartStore = create<CartState>()(
       deleteCartProduct: (productId) =>
         set((state) => ({
           items: state.items.filter(
-            ({ product }) => product?._id !== productId
+            ({ product }) => product?._id !== productId,
           ),
         })),
       resetCart: () => set({ items: [] }),
       getTotalPrice: () => {
         return get().items.reduce(
           (total, item) => total + (item.product.price ?? 0) * item.quantity,
-          0
+          0,
         );
       },
       getSubTotalPrice: () => {
@@ -80,8 +80,8 @@ const useCartStore = create<CartState>()(
       },
       getGroupedItems: () => get().items,
     }),
-    { name: "cart-store" }
-  )
+    { name: 'cart-store' },
+  ),
 );
 
 export default useCartStore;
